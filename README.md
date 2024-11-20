@@ -108,3 +108,22 @@ Build and execute to see the results:
 ```shell
 lake exec lean-nuts-and-bolts
 ```
+
+# Step 2 - Debug Tracing
+
+The functions `dbg_trace` and `dbgTraceVal` are handy for debugging.
+The expression
+
+```
+dbg_trace "msg with {interpolations}"; val
+```
+
+evaluates to `val`, and
+
+```
+dbgTraceVal val
+```
+
+is shorthand for `dbg_trace "{val}"; val`.
+
+See accompanying code changes for example uses.
