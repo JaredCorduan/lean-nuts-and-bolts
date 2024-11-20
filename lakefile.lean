@@ -1,6 +1,8 @@
 import Lake
 open Lake DSL
 
+require "leanprover-community" / "batteries" @ git "main"
+
 package "lean-nuts-and-bolts" where
   -- add package configuration options here
 
